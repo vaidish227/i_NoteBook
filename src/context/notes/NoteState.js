@@ -6,8 +6,80 @@ const NoteState = (props) =>{
         {
           "_id": "66003a36f7988aeec5bc528d",
           "user": "65ffc7f0dd937add6c923a83",
-          "title": "hello1",
-          "description": "bggsnhchsushucsi",
+          "title": "My title",
+          "description": "My notes description",
+          "tag": "hyy",
+          "date": "2024-03-24T14:35:34.272Z",
+          "__v": 0
+        },
+        {
+          "_id": "66003a36f7988aeec5bc528d",
+          "user": "65ffc7f0dd937add6c923a83",
+          "title": "My title",
+          "description": "My notes description",
+          "tag": "hyy",
+          "date": "2024-03-24T14:35:34.272Z",
+          "__v": 0
+        },
+        {
+          "_id": "66003a36f7988aeec5bc528d",
+          "user": "65ffc7f0dd937add6c923a83",
+          "title": "My title",
+          "description": "My notes description",
+          "tag": "hyy",
+          "date": "2024-03-24T14:35:34.272Z",
+          "__v": 0
+        },
+        {
+          "_id": "66003a36f7988aeec5bc528d",
+          "user": "65ffc7f0dd937add6c923a83",
+          "title": "My title",
+          "description": "My notes description",
+          "tag": "hyy",
+          "date": "2024-03-24T14:35:34.272Z",
+          "__v": 0
+        },
+        {
+          "_id": "66003a36f7988aeec5bc528d",
+          "user": "65ffc7f0dd937add6c923a83",
+          "title": "My title",
+          "description": "My notes description",
+          "tag": "hyy",
+          "date": "2024-03-24T14:35:34.272Z",
+          "__v": 0
+        },
+        {
+          "_id": "66003a36f7988aeec5bc528d",
+          "user": "65ffc7f0dd937add6c923a83",
+          "title": "My title",
+          "description": "My notes description",
+          "tag": "hyy",
+          "date": "2024-03-24T14:35:34.272Z",
+          "__v": 0
+        },
+        {
+          "_id": "66003a36f7988aeec5bc528d",
+          "user": "65ffc7f0dd937add6c923a83",
+          "title": "My title",
+          "description": "My notes description",
+          "tag": "hyy",
+          "date": "2024-03-24T14:35:34.272Z",
+          "__v": 0
+        },
+        {
+          "_id": "66003a36f7988aeec5bc528d",
+          "user": "65ffc7f0dd937add6c923a83",
+          "title": "My title",
+          "description": "My notes description",
+          "tag": "hyy",
+          "date": "2024-03-24T14:35:34.272Z",
+          "__v": 0
+        },
+        {
+          "_id": "66003a36f7988aeec5bc528d",
+          "user": "65ffc7f0dd937add6c923a83",
+          "title": "My title",
+          "description": "My notes description",
           "tag": "hyy",
           "date": "2024-03-24T14:35:34.272Z",
           "__v": 0
