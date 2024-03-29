@@ -14,7 +14,7 @@ const NoteState = (props) => {
       headers: {
         "Content-Type": "application/json",
         "auth-token":
-          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjVmZmM3ZjBkZDkzN2FkZDZjOTIzYTgzIn0sImlhdCI6MTcxMTI2MjkxM30.0rl_0OoR0yztbIEk7efgF6x3IVBcK3cXHKFx9DfPStA",
+          localStorage.getItem('token'),
       },
     });
     const json = await response.json();
@@ -30,7 +30,7 @@ const NoteState = (props) => {
       headers: {
         "Content-Type": "application/json",
         "auth-token":
-          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjVmZmM3ZjBkZDkzN2FkZDZjOTIzYTgzIn0sImlhdCI6MTcxMTI2MjkxM30.0rl_0OoR0yztbIEk7efgF6x3IVBcK3cXHKFx9DfPStA",
+          localStorage.getItem('token'),
       },
 
       body: JSON.stringify({ title, description, tag }),
@@ -47,10 +47,11 @@ const NoteState = (props) => {
       headers: {
         "Content-Type": "application/json",
         "auth-token":
-          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjVmZmM3ZjBkZDkzN2FkZDZjOTIzYTgzIn0sImlhdCI6MTcxMTI2MjkxM30.0rl_0OoR0yztbIEk7efgF6x3IVBcK3cXHKFx9DfPStA",
+          localStorage.getItem('token'),
       },
     });
     const json = response.json();
+    console.log(json)
     const newNotes = notes.filter((note) => {
       return note._id !== id;
     });
@@ -64,13 +65,13 @@ const NoteState = (props) => {
       headers: {
         "Content-Type": "application/json",
         "auth-token":
-          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjVmZmM3ZjBkZDkzN2FkZDZjOTIzYTgzIn0sImlhdCI6MTcxMTI2MjkxM30.0rl_0OoR0yztbIEk7efgF6x3IVBcK3cXHKFx9DfPStA",
+          localStorage.getItem('token'),
       },
 
       body: JSON.stringify({ title, description, tag }),
     });
     const json = await response.json();
-
+    
     let newNotes = JSON.parse(JSON.stringify(notes));
     //Logic to edit in client
     for (let index = 0; index < newNotes.length; index++) {
@@ -82,6 +83,7 @@ const NoteState = (props) => {
         break;
       }
     }
+    console.log(json)
     setNotes(newNotes);
   };
   return (

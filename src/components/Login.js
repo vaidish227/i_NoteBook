@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 
-const Login = () => {
+const Login = (props) => {
     const [credentials,setCredentials] = useState({email:"",password:""});
-
-    
+    let navigate = useNavigate()
     const handleSubmit = async (e) =>{
         e.preventDefault();
         const response = await fetch("http://localhost:5000/api/auth/login" ,{
@@ -20,17 +20,20 @@ const Login = () => {
         if(json.success){
             //save the auth token and redirect 
             localStorage.setItem('token',json.authtoken)
-         
+            props.showAlert("Logged in successfully","success")
+            navigate("/")
+            
         }
         else{
-            alert("invalid credentials")
+          props.showAlert("Invalid Credentials","danger")
         }
     }
     const onChange = (e) => {
         setCredentials({ ...credentials, [e.target.name]: e.target.value })
     }
   return (
-    <div>
+    <div className='mt-3'>
+      <h1>Login to continue to inotebook</h1>
       <form  onSubmit={handleSubmit}>
   <div className="mb-3">
     <label htmlFor="email" className="form-label">Email address</label>
